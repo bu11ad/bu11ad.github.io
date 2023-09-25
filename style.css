@@ -1,6 +1,5 @@
 body {
     font-family: sans-serif;
-    background-color: #81d4fa;
     font-weight: bold;
 	text-align: center;
 	margin: 0;
@@ -45,8 +44,8 @@ body {
 	z-index: 99999;
 }
 
-.cadetblue{
-	background-color: cadetblue;
+.white{
+	background-color:white;
 }
 
 .hidden{

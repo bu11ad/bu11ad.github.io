@@ -8,17 +8,27 @@
 </head>
 <body>
 	<div class="hidden" id="grey"></div>
-	<div class="hidden cadetblue" id="popUp"><span id="close">X</span><span id="mistake"></span></div>
+	<div class="hidden white" id="popUp">
+		<div id="close">X</div>
+		<span id="mistake"></span>
+	</div>
 	<div id="game">
-	<div class="cadetblue" id="upgrade">
+	<div id="upgrade" class="white">
 		<button id="openShop">shop</button>
 		<button id="settings">settings</button>
 		<button class="hidden" id="back">back</button>
 		<button class="hidden" id="backSettings">back</button>
+		<form class="hidden" id="form">
+			<label for="colorPicker">Select background color</label>
+			<input type="color" name="colorPicker" id="colorPickerId">
+			<input type="submit" id="colorPickerSubmit" value="Enter">
+		</form>
 		<button class="hidden" id="upgrade1">buy +1 click(10)</button>
+		<button class="hidden" id="upgrade2">buy click in Sec(100)</button>
 	</div>			
-	<div class="cadetblue" id="clicker">
+	<div id="clicker" class="white">
 		<h1 id="h1">Cakes:0</h1>
+		<p id="clickPerSecond">Clicks in Second:</p>
 		<a href="#" class="btn btn-white btn-        animate" id="button">Click Keks</a>
 	</div>
 		<script src="script.js"></script>
