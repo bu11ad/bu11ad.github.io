@@ -7,22 +7,20 @@ body {
 }
 
 #upgrade {
-	height: 300px;
-	width: 200px;
-	float: right;
+	grid-area: admin;
+
 }
 
 #clicker {
-	height: 200px;
-	width: 300px;
-	float: left;
+	grid-area: main-site;
 }
 
 #game {
-	height: 300px;
-	width: 500px;
-	border-radius: 100px;
+	grid-template-areas: "admin main-site";
+	grid-template-columns: 2fr 16fr;
+	display: grid;
 	margin: 0 auto;
+	
 }
 
 #grey{

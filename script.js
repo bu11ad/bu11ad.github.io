@@ -33,6 +33,23 @@ var picker = document.getElementById('colorPickerId');
 var submitFormPicker = document.getElementById('colorPickerSubmit');
 let massiveWhite=document.getElementsByClassName('white');
 let clickPerSecond = document.getElementById('clickPerSecond');
+let body = document.getElementById('body');
+let resetFont = document.getElementById('resetFont');
+let font1= document.getElementById('font1');
+let font2 = document.getElementById('font2');
+
+resetFont.addEventListener('click', function(){
+	body.style.fontFamily = '"Helvetica"';
+});
+
+font1.addEventListener('click', function(){
+	body.style.fontFamily = '"Verdana"';
+});
+
+font2.addEventListener('click', function(){
+	body.style.fontFamily = '"monospace"';
+});
+
 submitFormPicker.addEventListener('click',function(event){
 	event.preventDefault();
 	for(var z=0;z<massiveWhite.length;z++){
@@ -125,14 +142,20 @@ settings.addEventListener('click', function () {
 	shop.classList.add('hidden');
 	settings.classList.add('hidden');
 	backSettings.classList.remove('hidden');
+	resetFont.classList.remove('hidden');
+	font1.classList.remove('hidden');
+	font2.classList.remove('hidden');
 	form.classList.remove('hidden');
 });
 
 backSettings.addEventListener('click', function () {
 	backSettings.classList.add('hidden');
+	resetFont.classList.add('hidden');
+	font1.classList.add('hidden');
+	font2.classList.add('hidden');
 	settings.classList.remove('hidden');
 	shop.classList.remove('hidden');
-	form.classList.add('hidden');
+	form.classList.add('hidden');	
 });
 
 upgradeButtonPerSecond1.addEventListener('click', function () {
