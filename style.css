@@ -2,13 +2,12 @@ body {
     font-family: sans-serif;
     font-weight: bold;
 	text-align: center;
-	margin: 0;
+	margin: 0px;
 	padding: 0;
 }
 
 #upgrade {
 	grid-area: admin;
-
 }
 
 #clicker {
@@ -20,7 +19,7 @@ body {
 	grid-template-columns: 2fr 16fr;
 	display: grid;
 	margin: 0 auto;
-	
+	height: 100vh;
 }
 
 #grey{
@@ -120,4 +119,3 @@ body {
         transform: translateY(0px);
     }
 }
-
